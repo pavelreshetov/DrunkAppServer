@@ -1,6 +1,9 @@
-from django.urls import path, include
-from .views.example import Test
+from django.urls import path
+from .views.pack import Packs
+from .views.question import Questions
 
 urlpatterns = [
-    path('', Test().test, name='test')
+    path('pack', Packs().packs, name='pack'),
+    path('question', Questions().questions, name='question')
+
 ]
