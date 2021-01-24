@@ -12,7 +12,6 @@ class QuestionApi:
                     'question': question.question,
                     'gender': question.gender
                 }
-
             return data
         except Exception:
             return 'not found'
