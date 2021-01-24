@@ -1,11 +1,15 @@
 from django.http import JsonResponse
-from PackService.controllers.Api import all_packs
+from PackService.controllers.api_pack import PackApi
 
 
 class Packs:
 
-    def packs(self, request):
+    def get_packs(self, request):
         if request.method == "GET":
-            data = all_packs()
-
-        return JsonResponse(data=data, status=200)
+            data = {
+                'data': PackApi.all_packs()
+            }
+            return JsonResponse(data=data, status=200)
+        else:
+            answer = 'method did not find'
+            return answer
