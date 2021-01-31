@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models.packs import Packs
-from .models.question_info import Questions
+from .models.PackModel import PackModel
+from .models.QuestionModel import QuestionModel
 
-admin.site.register(Packs)
-admin.site.register(Questions)
+admin.site.register(PackModel)
+admin.site.register(QuestionModel)

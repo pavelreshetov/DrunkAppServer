@@ -1,3 +1,3 @@
-from .packs import Packs
-from .question_info import Questions
-from .gender import Gender
+from .PackModel import PackModel
+from .QuestionModel import QuestionModel
+from .GenderModel import GenderModel
